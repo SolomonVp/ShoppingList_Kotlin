@@ -37,7 +37,6 @@ class MainActivity : AppCompatActivity() {
                 ShopListAdapter.VIEW_TYPE_DISABLED,
                 ShopListAdapter.MAX_POOL_SIZE
             )
-
         }
         setupLongClickListener()
         setupClickListener()
@@ -49,6 +48,7 @@ class MainActivity : AppCompatActivity() {
             0,
             ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
         ) {
+
             override fun onMove(
                 recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder,
